@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jitin Singh</title>
+    <link rel="icon" type="image/x-icon" href="../favicon/favicon.ico">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Baloo+Bhai+2:wght@800&family=Shantell+Sans:wght@300&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #0D1117;
+            color: white;
+        }
+
+        #navbar {
+            display: flex;
+            background-color: #111823;
+            position: sticky;
+            top: 0;
+
+        }
+
+        #navbar>img {
+            height: 55px;
+            margin: 10px 120px;
+            filter: invert(100%);
+            border-radius: 30px;
+        }
+
+        #navbar-ul {
+            display: flex;
+        }
+
+        #navbar-ul>li>a {
+            text-decoration: none;
+            color: white;
+            font-family: 'Baloo Bhai 2', 'Shantell Sans', cursive;
+            font-size: 30px;
+        }
+
+        #navbar-ul>li>a:hover {
+            color: red;
+        }
+
+        #navbar-ul>li {
+            list-style: none;
+            margin: 15px 15px;
+        }
+
+        #home-section {
+            display: flex;
+            justify-content: right;
+        }
+
+        #home-section>img {
+            height: 85vh;
+            width: 300px;
+            display: inline-block;
+        }
+
+        #about-cont {
+            height: 85vh;
+            width: 70rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Baloo Bhai 2', 'Shantell Sans', cursive;
+            font-size: 30px;
+            color: white;
+        }
+
+        #summary {
+            width: 400px;
+            margin-left: 22px;
+            font-size: large;
+        }
+
+        #snap-div {
+            width: 30rem;
+        }
+
+
+        /* typer cursor */
+        .typewriter h3 {
+            color: #fff;
+            font-family: 'Baloo Bhai 2', 'Shantell Sans', cursive;
+            overflow: hidden;
+            /* Ensures the content is not revealed until the animation */
+            border-right: .15em solid orange;
+            /* The typwriter cursor */
+            white-space: nowrap;
+            /* Keeps the content on a single line */
+            margin: 0 auto;
+            /* Gives that scrolling effect as the typing happens */
+            /* letter-spacing: .15em; */
+            /* Adjust as needed */
+            animation:
+                typing 3.5s steps(30, end),
+                blink-caret .5s step-end infinite;
+        }
+
+        /* The typing effect */
+        @keyframes typing {
+            from {
+                width: 0
+            }
+
+            to {
+                width: 100%
+            }
+        }
+
+        /* The typewriter cursor effect */
+        @keyframes blink-caret {
+
+            from,
+            to {
+                border-color: transparent
+            }
+
+            50% {
+                border-color: orange
+            }
+        }
+
+
+        #education {
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+
+        .education-card-cont {
+            display: flex;
+        }
+
+        .card {
+            width: 560px;
+            /* height: 650px; */
+            border: 3px solid white;
+            border-radius: 5px;
+            margin: 25px;
+
+        }
+
+        .card>h1 {
+            border-bottom: 3px solid #fff;
+            font-size: xx-large;
+            text-align: center;
+        }
+
+        .logo {
+            display: flex;
+        }
+
+        .logo>img {
+            height: 60px;
+            width: 60px;
+            margin: 10px 15px;
+            margin-right: 25px;
+
+        }
+
+        .logo>h3 {
+            margin: 30px 15px;
+
+        }
+
+        #institutional-education {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #institutional-education>h1 {
+            text-align: center;
+            margin: 10px 0px;
+            font-size: xx-large;
+        }
+
+        #ins-edu-cont {
+            display: flex;
+            justify-content: center;
+        }
+
+        .ins-edu {
+            border: 3px solid white;
+            border-radius: 5px;
+            width: 350px;
+            justify-content: center;
+            padding: 10px;
+            margin: 5px 10px;
+        }
+
+        .ins-edu>h2 {
+            margin-bottom: 10px;
+        }
+
+        #footer {
+            background-color: black;
+            display: flex;
+        }
+
+        #footer-cont {
+            display: flex;
+            margin-left: 177px;
+        }
+
+        .footer-item {
+            margin: 10px 50px;
+        }
+
+        .footer-item>h1 {
+            margin-bottom: 5px;
+        }
+
+        .footer-item>p>a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbar">
+        <img src="Icon.png" alt="JS">
+        <nav>
+            <ul id="navbar-ul">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About Me</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/blogs">My Blogs</a></li>
+                <li><a href="/contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- <section id="aboutMe-section">
+        <p>I am resident of Nawabganj Village of Rampur Disttrict</p>
+        <p>Strengths : Good Logical and Analytical Skills Also I am a Quick Learner who love to learn new things everytimes.</p>
+        <p>My strengths are I am a self-motivated, hard-working and disciplined person. My short-term goal is to get a job in a reputed organization to improve my skills and knowledge and gain experience. My long-term goal is to be in the best position in my field of work. That's all about me.</p>
+    </section> -->
+
+    <section id="home-section">
+        <div id="about-cont">
+            <h1>Hey, I'm Jitin Singh</h1>
+            <div class="typewriter">
+                <h3>FRONT END DEVELOPER</h3>
+            </div>
+            <div id="summary">
+                <p>
+                    I am fresher who is searching for a internship where I can apply my skills as well as improve them and can gain knowledge and experience in this field.
+                </p>
+            </div>
+        </div>
+        <div id="snap-div">
+            <img src="snap.jpg" alt="snap">
+        </div>
+    </section>
+
+    <section id="education">
+
+        <div class="education-card-cont">
+            <div class="card">
+                <h1>Programming Languages</h1>
+                <div>
+                    <div class="logo">
+                        <img src="./logos/c.png" alt="c">
+                        <h3>C</h3>
+                    </div>
+                    <div class="logo">
+                        <img src="./logos/cpp.png" alt="cpp">
+                        <h3>C++</h3>
+                    </div>
+                    <div class="logo">
+                        <img src="./logos/java.jpg" alt="java">
+                        <h3>Java</h3>
+                    </div>
+                    <div class="logo">
+                        <img src="./logos/javascript.png" alt="javascript">
+                        <h3>JavaScript</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h1>Frameworks & Libraries</h1>
+                <div>
+                    <div class="logo">
+                        <img src="./logos/reactjs.png" alt="reactjs">
+                        <h3>React.JS</h3>
+                    </div>
+                    <div class="logo">
+                        <img src="./logos/nodejs.png" alt="nodejs">
+                        <h3>Node.JS</h3>
+                    </div>
+                    <div class="logo">
+                        <img src="./logos/tailwindcss.png" alt="tailwindcss">
+                        <h3>Tailwind CSS</h3>
+                    </div>
+                    <div class="logo">
+                        <img src="./logos/bootstrap.png" alt="bootstrap">
+                        <h3>Bootstrap</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="education-card-cont">
+            <div class="card">
+                <h1>Tools & Technologies</h1>
+                <div>
+                    <div class="logo">
+                        <img src="./logos/vscode.png" alt="vscode">
+                        <h3>Visual Studio Code</h3>
+                    </div>
+                    <div class="logo">
+                        <img src="./logos/github.png" alt="github">
+                        <h3>Github</h3>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card">
+                <h1>Other Skills</h1>
+                <div>
+                    <div class="logo">
+                        <img src="./logos/dsa.jpg" alt="dsa">
+                        <h3>Data Structures and Algorithms</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section id="projects">
+        <h1>My Projects</h1>
+        <div class="project-card">
+            <h3>Food Delivery Website</h3>
+            <p>This is a food delivery website </p>
+            <p>Here I used HTML 30% , CSS 56% and JavaScript 10%</p>
+        </div>
+        <div class="project-card">
+            <h3>Gym Website</h3>
+            <p>This is a landing page for gym website</p>
+            <p>Here I used HTML 30% , CSS 56% and JavaScript 10%</p>
+        </div>
+        <div class="mini-projects">
+
+        </div>
+    </section> -->
+
+    <section id="institutional-education">
+        <h1>Institutional Education</h1>
+        <div id="ins-edu-cont">
+            <div class="ins-edu">
+                <h2>Graduation (Highest)</h2>
+                <p>Year Completed : 2021 - 2025</p>
+                <p>Course : Bachelor of Technology</p>
+                <p>Branch : Computer Science and Engineering</p>
+                <p>Institution : IFTM University Moradabad</p>
+            </div>
+            <div class="ins-edu">
+                <h2>Intermediate</h2>
+                <p>Year Completed : 2021</p>
+                <p>Institution : DIC Gadarpur US Nagar</p>
+                <p>Board : Uttarakhand Board</p>
+                <p>Medium : Hindi</p>
+            </div>
+            <div class="ins-edu">
+                <h2>Highschool</h2>
+                <p>Year Completed : 2019</p>
+                <p>Institution : DIC Gadarpur US Nagar</p>
+                <p>Board : Uttarakhand Board</p>
+                <p>Medium : Hindi</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer">
+        <div id="footer-cont">
+            <div class="footer-item">
+                <h1>Links</h1>
+                <p><a target="_blank" href="https://github.com/jitinsingh000">Github</a></p>
+                <p><a target="_blank" href="https://www.instagram.com/jitin_singh_000/">Instagram</a></p>
+            </div>
+            <div class="footer-item">
+                <h1>Contact Details</h1>
+                <p>Email Address : jitinsingh000@gmail.com</p>
+                <p>Contact Number : +91 9548751573</p>
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>
+
+<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Baloo+Bhai+2:wght@800&family=Shantell+Sans:wght@300&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+font-family: 'Anton', sans-serif;
+font-family: 'Baloo Bhai 2', cursive;
+font-family: 'Shantell Sans', cursive;
+font-family: 'Ubuntu', sans-serif; -->
