@@ -11,6 +11,13 @@
         href="https://fonts.googleapis.com/css2?family=Anton&family=Baloo+Bhai+2:wght@800&family=Shantell+Sans:wght@300&family=Ubuntu:wght@300&display=swap"
         rel="stylesheet">
     <style>
+        #navbar {
+            overflow: hidden;
+            background-color: #333;
+            position: relative;
+        }
+
+
         * {
             margin: 0;
             padding: 0;
@@ -33,9 +40,9 @@
 
         }
 
-        #navbar>img {
+        #navbar>a>img {
             height: 55px;
-            margin: 10px 120px;
+            margin: 10px 100px;
             filter: invert(100%);
             border-radius: 30px;
         }
@@ -48,54 +55,60 @@
             text-decoration: none;
             color: white;
             font-family: 'Baloo Bhai 2', 'Shantell Sans', cursive;
-            font-size: 30px;
+            font-size: 25px;
         }
 
         #navbar-ul>li>a:hover {
-            color: red;
+            color: rgba(255, 255, 255, 0.65);
         }
 
         #navbar-ul>li {
             list-style: none;
-            margin: 15px 15px;
+            margin: 19px 20px;
         }
 
         #home-section {
             display: flex;
-            justify-content: right;
+            height: 90vh;
         }
 
         #home-section>img {
             height: 85vh;
             width: 300px;
             display: inline-block;
+            margin-left: 102px;
         }
 
         #about-cont {
             height: 85vh;
-            width: 70rem;
+            width: 55rem;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             font-family: 'Baloo Bhai 2', 'Shantell Sans', cursive;
-            font-size: 30px;
+            font-size: 25px;
             color: white;
+            margin-top: 75px;
         }
 
         #summary {
             width: 400px;
-            margin-left: 22px;
+            margin-left: 88px;
             font-size: large;
         }
 
         #snap-div {
             width: 30rem;
+            margin-top: 75px;
         }
 
 
         /* typer cursor */
-        .typewriter h3 {
+        .typewriter
+
+        /* h3, */
+        #welcome-heading {
             color: #fff;
             font-family: 'Baloo Bhai 2', 'Shantell Sans', cursive;
             overflow: hidden;
@@ -103,6 +116,7 @@
             border-right: .15em solid orange;
             /* The typwriter cursor */
             white-space: nowrap;
+            font-size: 35px;
             /* Keeps the content on a single line */
             margin: 0 auto;
             /* Gives that scrolling effect as the typing happens */
@@ -146,6 +160,11 @@
 
         }
 
+        #education>h1 {
+            font-size: xx-large;
+            text-decoration: underline;
+        }
+
 
         .education-card-cont {
             display: flex;
@@ -175,12 +194,77 @@
             width: 60px;
             margin: 10px 15px;
             margin-right: 25px;
-
+            border-radius: 15px;
         }
 
         .logo>h3 {
             margin: 30px 15px;
 
+        }
+
+        #projects {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+        }
+
+        #projects>h1 {
+            text-align: center;
+            font-size: xx-large;
+            text-decoration: underline;
+            margin-bottom: 20px;
+        }
+
+        #project-cont {
+            display: flex;
+        }
+
+        .project-card {
+            border: 3px solid white;
+            border-radius: 5px;
+            width: 338px;
+            padding: 15px;
+            margin: 0px 15px;
+        }
+
+        .project-card>h2 {
+            text-decoration: underline;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+
+        #mini-projects {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+        }
+
+        #mini-projects>h1 {
+            text-align: center;
+            font-size: xx-large;
+            text-decoration: underline;
+            margin-bottom: 20px;
+        }
+
+        #mini-project-cont {
+            display: flex;
+        }
+
+        .mini-project-card {
+            border: 3px solid white;
+            border-radius: 5px;
+            width: 338px;
+            padding: 15px;
+            margin: 0px 15px;
+        }
+
+        .mini-project-card>h2 {
+            text-decoration: underline;
+            text-align: center;
+            margin-bottom: 15px;
         }
 
         #institutional-education {
@@ -192,6 +276,7 @@
             text-align: center;
             margin: 10px 0px;
             font-size: xx-large;
+            text-decoration: underline;
         }
 
         #ins-edu-cont {
@@ -202,19 +287,102 @@
         .ins-edu {
             border: 3px solid white;
             border-radius: 5px;
-            width: 350px;
+            width: 338px;
             justify-content: center;
-            padding: 10px;
-            margin: 5px 10px;
+            padding: 15px;
+            margin: 5px 15px;
         }
 
         .ins-edu>h2 {
             margin-bottom: 10px;
+            text-decoration: underline;
+        }
+
+        #services {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 21px;
+            width: 70vw;
+            margin-left: 208px;
+        }
+
+        #services>h1 {
+            text-decoration: underline;
+            margin-bottom: 20px;
+            font-size: xx-large;
+        }
+
+        #freelance {
+            border: 3px solid white;
+            border-radius: 5px;
+            padding: 10px;
+            width: 72.8vw;
+        }
+
+        #freelance>h2 {
+            text-decoration: underline;
+            margin-bottom: 8px;
+        }
+
+        #freelance>p {
+            font-size: 20px;
+            /* text-align: center; */
+        }
+
+        /* Contact Section */
+        #contact {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        #contact>h1 {
+            font-size: xx-large;
+            text-decoration: underline;
+        }
+
+        form>div>input,
+        textarea {
+            width: 540px;
+            margin: 5px 0px;
+            background-color: #0D1117;
+            outline-color: #522828;
+            border: 2px solid white;
+            border-radius: 5px;
+            color: white;
+        }
+
+        form>div>input {
+            height: 25px;
+        }
+
+        #contact-submit {
+            display: flex;
+            justify-content: center;
+        }
+
+        #contact-submit>input {
+            width: 110px;
+            padding: 5px;
+            font-size: 17px;
+            background-color: white;
+            height: auto;
+            color: black;
+            cursor: pointer;
+        }
+
+        ::placeholder {
+            color: white;
         }
 
         #footer {
             background-color: black;
             display: flex;
+            /* border: 3px solid white;
+            border-radius: 5px; */
         }
 
         #footer-cont {
@@ -228,6 +396,7 @@
 
         .footer-item>h1 {
             margin-bottom: 5px;
+            text-decoration: underline;
         }
 
         .footer-item>p>a {
@@ -239,14 +408,15 @@
 
 <body>
     <div id="navbar">
-        <img src="Icon.png" alt="JS">
-        <nav>
+        <a href="/"><img src="Icon.png" alt="JS"></a>
+        <nav id="nav">
             <ul id="navbar-ul">
                 <li><a href="/">Home</a></li>
-                <li><a href="/about">About Me</a></li>
-                <li><a href="/services">Services</a></li>
-                <li><a href="/blogs">My Blogs</a></li>
-                <li><a href="/contact">Contact Me</a></li>
+                <li><a href="#home-section">About Me</a></li>
+                <!-- <li><a href="#projects">My Projects</a></li> -->
+                <!-- <li><a target="_blank" href="/blogs.html">My Blogs</a></li> -->
+                <li><a href="#services">Services</a></li>
+                <!-- <li><a href="#contact">Contact Me</a></li> -->
             </ul>
         </nav>
     </div>
@@ -259,23 +429,31 @@
 
     <section id="home-section">
         <div id="about-cont">
-            <h1>Hey, I'm Jitin Singh</h1>
             <div class="typewriter">
-                <h3>FRONT END DEVELOPER</h3>
+                <!-- <h1 id="welcome-heading">Welcome To My Personal Portfolio</h1> -->
+                <h1 id="welcome-heading">WELCOME TO MY PERSONAL PORTFOLIO</h1>
             </div>
+            <h1>Hey, I'm Jitin Singh</h1>
+            <h3>FRONT END DEVELOPER</h3>
+            <!-- <div class="typewriter">
+                <h3>FRONT END DEVELOPER</h3>
+            </div> -->
             <div id="summary">
                 <p>
-                    I am fresher who is searching for a internship where I can apply my skills as well as improve them and can gain knowledge and experience in this field.
+                    I am fresher who is searching for a internship for the role of Front End Developer in an reputed
+                    company/startup where I can apply my skills as well as improve them and can gain knowledge and
+                    experience in this field.
                 </p>
             </div>
         </div>
         <div id="snap-div">
             <img src="snap.jpg" alt="snap">
+            <!-- <img src="karan aujla-removebg-preview.jpg" alt="snap"> -->
         </div>
     </section>
 
     <section id="education">
-
+        <h1>I Can Work With</h1>
         <div class="education-card-cont">
             <div class="card">
                 <h1>Programming Languages</h1>
@@ -289,7 +467,7 @@
                         <h3>C++</h3>
                     </div>
                     <div class="logo">
-                        <img src="./logos/java.jpg" alt="java">
+                        <img src="./logos/java.png" alt="java">
                         <h3>Java</h3>
                     </div>
                     <div class="logo">
@@ -351,18 +529,41 @@
 
     <!-- <section id="projects">
         <h1>My Projects</h1>
-        <div class="project-card">
-            <h3>Food Delivery Website</h3>
-            <p>This is a food delivery website </p>
-            <p>Here I used HTML 30% , CSS 56% and JavaScript 10%</p>
+        <div id="project-cont">
+            <div class="project-card">
+                <h2>Food Delivery Website</h2>
+                <p>This is a food delivery website. In this project I used HTML 30% , CSS 56% and JavaScript 10%</p>
+            </div>
+            <div class="project-card">
+                <h2>Gym Website</h2>
+                <p>This is a landing page for gym website. In this project I used HTML 30% , CSS 56% and JavaScript 10%
+                </p>
+            </div>
+            <div class="project-card">
+                <h2>Gym Website</h2>
+                <p>This is a landing page for gym website. In this project I used HTML 30% , CSS 56% and JavaScript 10%
+                </p>
+            </div>
         </div>
-        <div class="project-card">
-            <h3>Gym Website</h3>
-            <p>This is a landing page for gym website</p>
-            <p>Here I used HTML 30% , CSS 56% and JavaScript 10%</p>
-        </div>
-        <div class="mini-projects">
-
+        <div id="mini-projects">
+            <h1>My Mini Projects</h1>
+            <div id="mini-project-cont">
+                <div class="mini-project-card">
+                    <h2>TextUtils</h2>
+                    <p>This is a text analyzer and manipulator application. In this project I used React and Bootstrap
+                    </p>
+                </div>
+                <div class="mini-project-card">
+                    <h2>NewsMonkey</h2>
+                    <p>This is a news application for news catorized by headlines. In this project I used React,
+                        Bootstrap and APIs</p>
+                </div>
+                <div class="mini-project-card">
+                    <h2>NewsMonkey</h2>
+                    <p>This is a news application for news catorized by headlines. In this project I used React,
+                        Bootstrap and APIs</p>
+                </div>
+            </div>
         </div>
     </section> -->
 
@@ -393,11 +594,51 @@
         </div>
     </section>
 
+    <section id="services">
+        <h1>My Services</h1>
+        <div id="freelance">
+            <h2>Freelancing</h2>
+            <p>As a freelancer I can work as a front end developer for you at a reasonable cost and can help you
+                building interactive and responsive websites which may help you with your business. So Contact me if you
+                are interested.</p>
+        </div>
+    </section>
+
+    <!-- contact -->
+    <!-- <section id="contact">
+        <h1>Contact Me</h1>
+        <div>
+            <form action="noaction.php">
+                <div>
+                    <input type="text" name="name" placeholder="Enter your name">
+                </div>
+
+                <div>
+                    <input type="text" name="number" placeholder="Enter your number">
+                </div>
+                <div>
+                    <input type="text" name="email" placeholder="Enter your email">
+                </div>
+
+                <div>
+                    <textarea name="message" id="" cols="70" rows="7"
+                        placeholder="Write your message here..."></textarea>
+                </div>
+
+                <div id="contact-submit">
+                    <input type="submit" value="Submit Now">
+                </div>
+
+            </form>
+        </div>
+    </section> -->
+
     <section id="footer">
         <div id="footer-cont">
             <div class="footer-item">
                 <h1>Links</h1>
                 <p><a target="_blank" href="https://github.com/jitinsingh000">Github</a></p>
+                <p><a target="_blank" href="https://www.linkedin.com/in/jitin-singh-080290253">Linked In</a></p>
                 <p><a target="_blank" href="https://www.instagram.com/jitin_singh_000/">Instagram</a></p>
             </div>
             <div class="footer-item">
@@ -408,6 +649,7 @@
         </div>
 
     </section>
+
 </body>
 
 </html>
