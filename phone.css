@@ -10,7 +10,6 @@
         background-color: #111823;
         position: sticky;
         top: 0;
-        width: 880px;
     }
 
     #nav>a {
@@ -381,15 +380,36 @@
         color: white;
     }
 
+
+
+
+
+
+
+
+
+
+
+
+
     /* Style the navigation menu */
     #navbar {
         overflow: hidden;
         position: relative;
+        width: 880px;
+    }
+
+    #navbar>a>img {
+        height: 80px;
+        margin: 10px 100px;
+        filter: invert(100%);
+        border-radius: 50px;
     }
 
     /* Hide the links inside the navigation menu (except for logo/home) */
     #navbar-ul {
         display: none;
+        margin-top: 15px;
     }
 
     /* Style navigation menu links */
@@ -406,8 +426,8 @@
         background: black;
         display: block;
         position: absolute;
-        right: 25px;
-        top: 14px;
+        right: 45px;
+        top: 30px;
     }
 
     /* Add a grey background color on mouse-over */
@@ -427,9 +447,14 @@
         flex-direction: column;
     }
 
-    #education {
+    /* #education {
         display: flex;
         justify-content: center;
+        margin-left: 365px;
+    } */
+
+    .card {
+        width: 530px;
     }
 
     #home-section {
@@ -444,26 +469,35 @@
     }
 
     #education {
-        margin-left: 440px;
+        margin-left: 365px;
     }
 
     #education>h1 {
-        width: 240px;
+        width: 250px;
     }
 
     #institutional-education {
-        margin-left: 250px;
+        margin-left: 150px;
         margin-top: 70px;
     }
 
     #institutional-education>h1 {
         width: 400px;
+        margin-left: 95px;
+    }
+
+    .ins-edu {
+        width: 500px;
     }
 
     #services {
         margin-top: 50px;
-        margin-left: 260px;
+        margin-left: 237px;
         margin-bottom: 40px;
+    }
+
+    #freelance {
+        width: 500px;
     }
 
     #footer {
@@ -472,7 +506,6 @@
 
     #footer-cont {
         display: flex;
-        flex-direction: column;
-        margin-left: 215px;
+        margin-left: 125px;
     }
 }
